@@ -1,7 +1,6 @@
 package inputs
 
 type ProfileUserInput struct {
-	UserUsername    string `json:"user_username" binding:"required"`
 	UserEmail       string `json:"user_email" binding:"required"`
 	UserFirstName   string `json:"user_first_name"`
 	UserLastName    string `json:"user_last_name"`

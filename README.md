@@ -38,6 +38,8 @@ Router.Run(":3600") // you can change that ":3600" with the port that you want
 2. Create a file ".env" then setup environment variable like code below:
 
 ```
+APP_PORT=<GIN LISTENING PORT>
+
 DB_HOSTNAME=<YOUR_DB_HOSTNAME>
 DB_PORT=<YOUR_DB_PORT>
 DB_USERNAME=<YOUR_DB_USERNAME>

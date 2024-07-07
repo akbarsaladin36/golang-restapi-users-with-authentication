@@ -3,6 +3,7 @@ package routes
 import (
 	"golang-rest-api-authentication/controllers"
 	"golang-rest-api-authentication/middleware"
+	"os"
 
 	"github.com/gin-gonic/gin"
 )
@@ -30,6 +31,6 @@ func ConnectRoutes() {
 	v1AdminAccess.POST("/users", controllers.CreateUser)
 	v1AdminAccess.DELETE("/users/:username", controllers.DeleteUser)
 
-	router.Run(":3601")
+	router.Run(os.Getenv("APP_PORT"))
 
 }

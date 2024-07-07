@@ -73,7 +73,6 @@ func UpdateMyProfile(c *gin.Context) {
 		return
 	}
 
-	user.UserUsername = userInput.UserUsername
 	user.UserEmail = userInput.UserEmail
 	user.UserFirstName = userInput.UserFirstName
 	user.UserLastName = userInput.UserLastName
